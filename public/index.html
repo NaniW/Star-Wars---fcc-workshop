@@ -13,17 +13,20 @@
   </head>
   <body class="container">
 
-
-    <div>
-      <h3> Hello, world! </h3>
+    <div id="component">
+      <h1 v-if="showMessage">{{ message }}</h1>
+      <button type="button" v-on:click="toggleMsg">Toggle</button>
     </div>
 
+    <ul v-for="x in todos">
+      <li>{{ x.text }}</li>
+    </ul>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/vue"></script
+    <script src="https://unpkg.com/vue"></script>
     <script src="app.js"></script>
   </body>
 </html>
