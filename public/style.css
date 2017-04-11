@@ -1,3 +1,49 @@
 body {
   background-color: #3498db;
 }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  border: solid 3px magenta;
+  height: 100vh;
+}
+
+.flex-item {
+  width: calc(33.333% - 20px);
+  height: 50px;
+  margin: 10px;
+  background: orange;
+  text-align: center;
+  border: solid 3px red;
+}
+
+.one {
+  display: flex;
+  height: 150px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.button-four {
+  align-self: baseline;
+}
+
+.two {
+  /*flex: 1;
+  align-self: stretch;*/
+}
+
+.three {
+  /*flex: 0;*/
+}
+
+.five {
+  /*order: -1;*/
+}
